@@ -41,7 +41,7 @@
 
   
 
-  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
 <nav class="menu dis-select"><a class="nav-item active" title="文章" href="/"><span>文章</span></a><a class="nav-item" title="笔记" href="/notes/"><span>笔记</span></a><a class="nav-item" title="关于" href="/about/"><span>关于</span></a></nav>
 </div>
 <div class="widgets">
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/07/05/mathtest_latex/"><span class="title">数学公式测试文章</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/07/05/mathtest_latex/"><span class="title">测试Markdown文章</span></a></div></widget>
 
 
 </div>
@@ -80,19 +80,6 @@
   <a class='button' id='back' href="/">返回主页</a>
 </article>
 
-
-  <div class="related-wrap md-text" id="comments">
-    <section class='header cmt-title cap theme'>
-      <p>快来参与讨论吧~</p>
-
-    </section>
-    <section class='body cmt-body waline'>
-      
-
-<div id="waline_container" class="waline_thread"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
-
-    </section>
-  </div>
 
 
 
@@ -422,28 +409,6 @@
 
 
 <!-- optional -->
-
-  <script type="module">
-  import { init } from 'https://gcore.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline.js';
-
-  const el = document.getElementById('waline_container');
-  util.viewportLazyload(el, load_waline, false);
-
-  function load_waline(){
-    if (!el) return;
-
-    utils.css('https://gcore.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline.css');
-    utils.css('https://gcore.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline-meta.css');
-
-    const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
-    const waline = init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline.js","css":"https://gcore.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline.css","meta_css":"https://gcore.jsdelivr.net/npm/@waline/client@3.1.2/dist/waline-meta.css","serverURL":"https://waline-2-g1691523.deta.app/","commentCount":true,"pageview":false}, {
-      el: '#waline_container',
-      path: path,
-      
-    }));
-  }
-</script>
-
 
 
 
