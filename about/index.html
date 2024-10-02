@@ -38,6 +38,8 @@
 
   <!-- feed -->
   
+    <link rel="alternate" href="/atom.xml" title="uupeter的小站" type="application/atom+xml">
+  
 
   <link rel="stylesheet" href="/css/main.css?v=1.29.1">
 
@@ -45,7 +47,7 @@
 
   
 
-  <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"><link rel="stylesheet" href="/custom/css/twcusto.css">
 </head>
 <body>
 
@@ -61,9 +63,9 @@
 <nav class="menu dis-select"><a class="nav-item" title="文章" href="/"><span>文章</span></a><a class="nav-item" title="笔记" href="/notes/"><span>笔记</span></a><a class="nav-item active" title="关于" href="/about/"><span>关于</span></a></nav>
 </div>
 <div class="widgets">
-<widget class="widget-wrapper slide-up post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/09/27/P7991/"><span class="title">洛谷 P7991 做题记录</span></a><a class="item title" href="/2024/07/05/mathtest_latex/"><span class="title">测试Markdown文章</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/09/27/P7991/"><span class="title">洛谷 P7991 做题记录</span></a></div></widget>
 </div>
-<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/238728/" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/></a></div></footer>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/238728/" target="_blank" rel="external nofollow noopener noreferrer"><i class="fa-brands fa-github"></i></a></div></footer>
 </div></aside><div class="l_main" id="main">
 
 
@@ -88,10 +90,10 @@
     </div>
     
   </div>
-  </div><article class="md-text content slide-up"><p>About me. Under construction…</p>
+  </div><article class="md-text content"><p>About me. Under construction…</p>
 </article>
 
-  <div class="related-wrap md-text slide-up" id="comments">
+  <div class="related-wrap md-text" id="comments">
     <section class='header cmt-title cap theme'>
       <p>快来参与讨论吧~</p>
 
@@ -105,7 +107,7 @@
 
 
 
-<footer class="page-footer slide-up footnote"><hr><div class="text"><p>本站由 <a href="/">uupeter</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br />
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">uupeter</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br />
 本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
@@ -438,9 +440,9 @@
 
   function load_twikoo() {
     if (!el) return;
-    utils.js('https://gcore.jsdelivr.net/npm/twikoo@1.6.8/dist/twikoo.all.min.js', {defer: true}).then(function () {
+    utils.js('https://registry.npmmirror.com/twikoo/1.6.39/files/dist/twikoo.all.min.js', {defer: true}).then(function () {
       const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
-      twikoo.init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/twikoo@1.6.8/dist/twikoo.all.min.js","envId":"https://twcm.netlify.app/.netlify/functions/twikoo"}, {
+      twikoo.init(Object.assign({"js":"https://registry.npmmirror.com/twikoo/1.6.39/files/dist/twikoo.all.min.js","envId":"https://twcm.netlify.app/.netlify/functions/twikoo"}, {
         el: '#twikoo_container',
         path: path,
       }));
@@ -573,21 +575,6 @@
     }
   });
 </script>
-<script defer src="https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    const slideUp = {
-      distance: `16px`,
-      duration: `800`,
-      interval: `100`,
-      scale: `1`,
-      opacity: 0,
-      easing: "ease-out"
-    };
-    ScrollReveal().reveal('.l_left .slide-up', slideUp);
-    ScrollReveal().reveal('.l_main .slide-up', slideUp);
-  });
-</script>
 <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
 <script defer src="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
 <script defer src="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"onload="renderMathInElement(document.body);"></script>
@@ -607,5 +594,6 @@
 
 
 <!-- inject -->
-
+<script src="/custom/js/random.js"></script>
 </div></body></html>
+<script>var posts=["2024/09/27/P7991/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
