@@ -50,7 +50,7 @@
 
 :root {
   --liushen-radius: 12px;
-  --liushen-card-border-width: 1px;
+  --liushen-card-border-width: 0px;
 }
 
 /* 浅色模式颜色 */
